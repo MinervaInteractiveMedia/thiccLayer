@@ -2,6 +2,9 @@
 
 An interactive tool for visualizing and experimenting with 3D printing parameters, specifically designed for exploring extreme nozzle diameters and layer heights where the print pattern becomes an aesthetic element. **Now with G-code generation for actual printing!**
 
+<img width="1420" height="1480" alt="image" src="https://github.com/user-attachments/assets/c0a94569-6f63-4d20-9a35-b088a421e772" />
+
+
 ## Overview
 
 This simulator allows you to:
