@@ -31,16 +31,10 @@ pip install matplotlib numpy
 
 ## Usage
 
-### Three Versions Available
-
-1. **GUI Version with G-Code** (`3d_print_simulator_gui.py`) - **RECOMMENDED** - Full-featured interactive interface
-2. **Original GUI Version** (`3d_print_simulator.py`) - Simple visualization-only GUI
-3. **Command Line Version** (`3d_print_simulator_cli.py`) - For batch processing and scripting
-
 ### GUI Version with G-Code Export (RECOMMENDED)
 
 ```bash
-python 3d_print_simulator_gui.py
+python thicLayer.py.py
 ```
 
 **Features:**
@@ -69,44 +63,6 @@ python 3d_print_simulator_gui.py
 - Save custom printer configurations
 - Generate G-code with one click
 - Automatic safety warnings
-
-### Command Line Version
-
-```bash
-python 3d_print_simulator_cli.py [options]
-```
-
-**Basic Examples:**
-
-```bash
-# Default settings (0.4mm nozzle, 0.2mm layer, concentric pattern on cube)
-python 3d_print_simulator_cli.py
-
-# Extreme thick layers with large nozzle
-python 3d_print_simulator_cli.py --nozzle 1.5 --layer 1.0 --extrusion 2.0 --layers 10
-
-# Honeycomb pattern on vase shape
-python 3d_print_simulator_cli.py --pattern honeycomb --shape vase --layers 30
-
-# High-resolution spiral pattern
-python 3d_print_simulator_cli.py --pattern spiral --infill 80 --dpi 300 --output spiral_hires.png
-```
-
-**All Command Line Options:**
-
-```
---nozzle FLOAT          Nozzle diameter in mm (default: 0.4)
---layer FLOAT           Layer height in mm (default: 0.2)
---extrusion FLOAT       Extrusion width in mm (default: 0.5)
---pattern CHOICE        Print pattern: concentric, rectilinear, grid, honeycomb, hilbert, spiral
---shape CHOICE          Shape: cube, cylinder, pyramid, vase, flat_square
---layers INT            Number of layers (default: 20)
---infill FLOAT          Infill density percentage 0-100 (default: 20)
---output FILENAME       Output image filename (default: print_simulation.png)
---no-path              Hide nozzle path lines
---no-extrusion         Hide extruded material volume
---dpi INT              Output resolution (default: 150)
-```
 
 ## Parameters Explained
 
